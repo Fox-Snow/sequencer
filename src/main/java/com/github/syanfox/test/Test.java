@@ -1,6 +1,6 @@
-package com.snowfox.test;
+package com.github.syanfox.test;
 
-import com.snowfox.Sequencer;
+import com.github.syanfox.Sequencer;
 
 /**
  * @program: sequencer

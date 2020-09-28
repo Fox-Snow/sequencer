@@ -1,8 +1,8 @@
-package com.snowfox;
+package com.github.syanfox;
 
-import com.snowfox.storage.StorageTask;
-import com.snowfox.order.OrderNumber;
-import com.snowfox.storage.SequenceStorage;
+import com.github.syanfox.storage.StorageTask;
+import com.github.syanfox.order.OrderNumber;
+import com.github.syanfox.storage.SequenceStorage;
 
 import java.util.Timer;
 

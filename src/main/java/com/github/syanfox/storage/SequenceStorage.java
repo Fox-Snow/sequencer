@@ -1,6 +1,6 @@
-package com.snowfox.storage;
+package com.github.syanfox.storage;
 
-import com.snowfox.entity.SerialNumber;
+import com.github.syanfox.entity.SerialNumber;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package com.snowfox.order;
+package com.github.syanfox.order;
 
-import com.snowfox.entity.SerialNumber;
-import com.snowfox.storage.SequenceStorage;
+import com.github.syanfox.entity.SerialNumber;
+import com.github.syanfox.storage.SequenceStorage;
 
 import java.util.*;
 
