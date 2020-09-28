@@ -1,7 +1,7 @@
-package org.snowfox.test;
+package com.snowfox.test;
 
-import org.snowfox.entity.SerialNumber;
-import org.snowfox.storage.SequenceStorage;
+import com.snowfox.entity.SerialNumber;
+import com.snowfox.storage.SequenceStorage;
 
 import java.util.ArrayList;
 import java.util.List;

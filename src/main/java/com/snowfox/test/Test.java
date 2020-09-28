@@ -1,6 +1,6 @@
-package org.snowfox.test;
+package com.snowfox.test;
 
-import org.snowfox.Sequencer;
+import com.snowfox.Sequencer;
 
 /**
  * @program: sequencer
@@ -15,13 +15,13 @@ public class Test {
         Sequencer.getInstance().start(new MysqlStorage());
 
         for(int i =0;i<10;i++){
-            long num = Sequencer.getInstance().getNumber("timeId");
-            System.out.println("timeId num==="+String.valueOf(num));
+            String num = Sequencer.getInstance().getNumber("timeId");
+            System.out.println("timeId num==="+num);
         }
 
         for(int j =0;j<20;j++){
-            long num = Sequencer.getInstance().getNumber("wId");
-            System.out.println("wId num==="+String.valueOf(num));
+            String num = Sequencer.getInstance().getNumber("wId");
+            System.out.println("wId num==="+num);
         }
 
         while (true){

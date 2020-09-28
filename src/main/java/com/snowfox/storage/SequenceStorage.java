@@ -1,6 +1,6 @@
-package org.snowfox.storage;
+package com.snowfox.storage;
 
-import org.snowfox.entity.SerialNumber;
+import com.snowfox.entity.SerialNumber;
 
 import java.util.List;
 

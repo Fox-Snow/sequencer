@@ -1,10 +1,9 @@
-package org.snowfox.order;
+package com.snowfox.order;
 
-import org.snowfox.entity.SerialNumber;
-import org.snowfox.storage.SequenceStorage;
+import com.snowfox.entity.SerialNumber;
+import com.snowfox.storage.SequenceStorage;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @program: sequencer
@@ -53,20 +52,20 @@ public  class OrderNumber {
      * @param type
      * @return
      */
-    public synchronized  Long getOrderNumber(String type){
+    public synchronized  String getOrderNumber(String type){
         if(orderNums.containsKey(type)){
             SerialNumber serialNumber =  orderNums.get(type);
             if(serialNumber  == null){
-                return 0L;
+                return String.valueOf(0L);
             }
 
             long newNum =serialNumber.getNum()+1;
             serialNumber.setNum(newNum);
             orderNums.put(type,serialNumber);
-            return newNum;
+            return String.valueOf(newNum);
         }
 
-        return 0L;
+        return String.valueOf(0L);
     }
 
     /**

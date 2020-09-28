@@ -1,9 +1,8 @@
-package org.snowfox;
+package com.snowfox;
 
-import org.snowfox.entity.SerialNumber;
-import org.snowfox.order.OrderNumber;
-import org.snowfox.storage.SequenceStorage;
-import org.snowfox.storage.StorageTask;
+import com.snowfox.storage.StorageTask;
+import com.snowfox.order.OrderNumber;
+import com.snowfox.storage.SequenceStorage;
 
 import java.util.Timer;
 
@@ -36,7 +35,7 @@ public class Sequencer {
     }
 
 
-    public Long getNumber(String type){
+    public String getNumber(String type){
         return orderNumber.getOrderNumber(type);
     }
 

@@ -1,4 +1,4 @@
-package org.snowfox.entity;
+package com.snowfox.entity;
 
 import java.io.Serializable;
 
