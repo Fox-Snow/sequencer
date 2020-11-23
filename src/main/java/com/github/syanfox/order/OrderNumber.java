@@ -18,7 +18,7 @@ public  class OrderNumber {
     private SequenceStorage sequenceStorage;
 
     public OrderNumber(SequenceStorage sequenceStorage){
-         this.sequenceStorage = sequenceStorage;
+        this.sequenceStorage = sequenceStorage;
     }
 
     public synchronized  List<SerialNumber>  getList(){
@@ -62,7 +62,10 @@ public  class OrderNumber {
             long newNum =serialNumber.getNum()+1;
             serialNumber.setNum(newNum);
             orderNums.put(type,serialNumber);
-            return String.valueOf(newNum);
+            if(serialNumber.getPrefix() == null || "".equals(serialNumber.getPrefix())){
+                return String.valueOf(newNum);
+            }
+            return serialNumber.getPrefix()+String.valueOf(newNum);
         }
 
         return String.valueOf(0L);
